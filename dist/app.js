@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const user_controller_1 = require("./controllers/user-controller");
+const bank_controller_1 = require("./controllers/bank-controller");
+const company_controller_1 = require("./controllers/company-controller");
+const userController = new user_controller_1.UserController();
+const bankController = new bank_controller_1.BankController();
+const companyController = new company_controller_1.CompanyController();
+userController.getUsers();
+userController.getUsersByAgeGenderBloodGroup(28, 'female', 'O-');
+companyController.getUsersByCompanyTitle('Sales Manager');
+bankController.getUsersByBankCardNumber('9289760655481815');
